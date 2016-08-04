@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>simple-shooter</title>
+	<!-- build:css --><!-- endbuild -->
+</head>
+<body  onselectstart="return false">
+
+	<section class="beginBlock">
+		<header class="beginBlock__header">
+			<h1>Welcome!</h1>
+			<p>Choose weapon and start the battle!</p>
+		</header>
+		<ul class="beginBlock__images-container">
+			<li class="beginBlock__image" data-weapon-class="WeaponAK">
+				<img src="img/weapon_AK-74u.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponBallista">
+				<img src="img/weapon_Ballista.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponBallista2">
+				<img src="img/weapon_Ballista2.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponBrowning">
+				<img src="img/weapon_Browning.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponG36C">
+				<img src="img/weapon_G36C.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponM1897">
+				<img src="img/weapon_M1897.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponStormPSR">
+				<img src="img/weapon_StormPSR.png" alt=""/>
+			</li
+			><li class="beginBlock__image" data-weapon-class="WeaponUMP45">
+				<img src="img/weapon_UMP45.png" alt=""/>
+			</li>
+		</ul>
+	</section>
+
+	<section class="endBlock hidden">
+		<header class="endBlock__header">
+			<h1>Time is out!</h1>
+			<p>Your score is:</p>
+		</header>
+		<span id="finalScore" class="endBlock__score">452</span>
+		<footer>
+			<p>To start new game press <b>Enter</b></p>
+		</footer>
+	</section>
+
+	<div class="time">
+		<span class="time__numbers"></span>
+	</div>
+
+	<div id="targetArea" class="target-area">
+		<div id="targetWrapper" class="target-wrapper">
+			<div id="targetItem" class="target"></div>
+		</div>
+	</div>
+
+	<div class="weapon">
+		<img src="img/fire.png" alt="" class="fire" data-fire=""/>
+		<img class="weapon__item" src="img/weapon_AK-74u.png" data-weapon="weapon-fire-0" alt=""/>
+		<img class="weapon__item active" src="img/weapon_Ballista.png" data-weapon="weapon-fire-1" alt=""/>
+		<img class="weapon__item" src="img/weapon_Ballista2.png" data-weapon="weapon-fire-2" alt=""/>
+		<img class="weapon__item" src="img/weapon_Browning.png" data-weapon="weapon-fire-3" alt=""/>
+		<img class="weapon__item" src="img/weapon_G36C.png" data-weapon="weapon-fire-4" alt=""/>
+		<img class="weapon__item" src="img/weapon_M1897.png" data-weapon="weapon-fire-5" alt=""/>
+		<img class="weapon__item" src="img/weapon_StormPSR.png" data-weapon="weapon-fire-6" alt=""/>
+		<img class="weapon__item" src="img/weapon_UMP45.png" data-weapon="weapon-fire-7" alt=""/>
+	</div>
+
+	<!-- build:js --><!-- endbuild -->
+</body>
+</html>
